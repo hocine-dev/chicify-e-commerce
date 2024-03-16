@@ -18,8 +18,8 @@ const Navbar = () => {
             <li onClick={()=>{setMenu('kids')}}><Link to='/kids'>Kids</Link> {Menu === 'kids'? <hr/>:null}</li>
         </ul>
         <div className="nav-login-cart">
-        <Link to='/login'><button>Login</button></Link>
-        <Link to='/cart'><img src={cart} alt="cart icon" /></Link>
+        <Link onClick={()=>{setMenu('')}} to='/login'><button>Login</button></Link>
+        <Link to='/cart' onClick={()=>{setMenu('')}}><img src={cart} alt="cart icon" /></Link>
             
             
             <div className="counter">0</div>
