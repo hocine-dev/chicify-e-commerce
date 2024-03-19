@@ -46,3 +46,69 @@
   border: 2px solid #ebebeb;
   background: white;
 }
+
+.down {
+  display: flex;
+  margin: 100px 0px;
+}
+
+.total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+  gap: 40px;
+}
+
+.total-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.total button {
+  width: 262px;
+  height: 58px;
+  border: none;
+  outline: none;
+  background: #ff5a5a;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.promo {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+.promo P {
+  color: #555;
+}
+
+.promo-box {
+  width: 504px;
+  margin-top: 15px;
+  padding-left: 20px;
+  height: 58px;
+  background: #eaeaea;
+}
+
+.promo-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  width: 330px;
+  height: 50px;
+}
+
+.promo-box button {
+  font-size: 16px;
+  background: black;
+  color: white;
+  width: 170px;
+  height: 58px;
+  cursor: pointer;
+}
