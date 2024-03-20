@@ -73,3 +73,45 @@
 a {
     all: unset; /* Reset all CSS properties */
   }
+
+
+  /*************  Responsive design ****************/
+
+  @media(max-width:1280px){
+    .navbar{padding: 12px 50px;}
+    .nav-menu{gap: 30px; font-size: 15px;}
+    .nav-logo img{scale: 0.9;}
+    .nav-login-cart{gap: 30px;}
+    .nav-login-cart img{height: 7vh;}
+    .nav-login-cart button{
+      width: 120px;
+      height: 45px;
+      font-size: 16px;
+    }
+    .counter{
+      margin-left: -40px;
+      font-size: 12px;
+    }
+  }
+
+
+
+  
+  @media(max-width:1024px){
+    .navbar{padding: 12px 30px;}
+    .nav-menu{gap: 25px; font-size: 14px;}
+    .nav-logo img{scale: 0.8;}
+    .nav-login-cart{gap: 30px;}
+    .nav-login-cart img{height: 6vh;}
+    .nav-login-cart button{
+      width: 80px;
+      height: 35px;
+      font-size: 14px;
+    }
+    .counter{
+      margin-left: -40px;
+      font-size: 12px;
+      width: 18px;
+      height: 18px;
+    }
+  }
