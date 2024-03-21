@@ -71,47 +71,100 @@
 }
 
 a {
-    all: unset; /* Reset all CSS properties */
+  all: unset; /* Reset all CSS properties */
+}
+
+.navDropDown {
+  display: none;
+}
+
+/*************  Responsive design ****************/
+
+@media (max-width: 1280px) {
+  .navbar {
+    padding: 12px 50px;
   }
-
-
-  /*************  Responsive design ****************/
-
-  @media(max-width:1280px){
-    .navbar{padding: 12px 50px;}
-    .nav-menu{gap: 30px; font-size: 15px;}
-    .nav-logo img{scale: 0.9;}
-    .nav-login-cart{gap: 30px;}
-    .nav-login-cart img{height: 7vh;}
-    .nav-login-cart button{
-      width: 120px;
-      height: 45px;
-      font-size: 16px;
-    }
-    .counter{
-      margin-left: -40px;
-      font-size: 12px;
-    }
+  .nav-menu {
+    gap: 30px;
+    font-size: 15px;
   }
-
-
-
-  
-  @media(max-width:1024px){
-    .navbar{padding: 12px 30px;}
-    .nav-menu{gap: 25px; font-size: 14px;}
-    .nav-logo img{scale: 0.8;}
-    .nav-login-cart{gap: 30px;}
-    .nav-login-cart img{height: 6vh;}
-    .nav-login-cart button{
-      width: 80px;
-      height: 35px;
-      font-size: 14px;
-    }
-    .counter{
-      margin-left: -40px;
-      font-size: 12px;
-      width: 18px;
-      height: 18px;
-    }
+  .nav-logo img {
+    scale: 0.9;
   }
+  .nav-login-cart {
+    gap: 30px;
+  }
+  .nav-login-cart img {
+    height: 7vh;
+  }
+  .nav-login-cart button {
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+  }
+  .counter {
+    margin-left: -40px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 12px 30px;
+  }
+  .nav-menu {
+    gap: 25px;
+    font-size: 14px;
+  }
+  .nav-logo img {
+    scale: 0.8;
+  }
+  .nav-login-cart {
+    gap: 30px;
+  }
+  .nav-login-cart img {
+    height: 6vh;
+  }
+  .nav-login-cart button {
+    width: 80px;
+    height: 35px;
+    font-size: 14px;
+  }
+  .counter {
+    margin-left: -40px;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 800px) {
+  .navbar {
+    padding: 10px 0px;
+  }
+  .navDropDown {
+    display: block;
+    scale: 0.7;
+  }
+  .nav-menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background: white;
+    justify-content: left;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 13%;
+    padding-block: 10%;
+    margin-left: 10%;
+  }
+  .show {
+    display: flex;
+  }
+ 
+}
+
+@media (max-width: 500px) {
+  .navbar{padding: 8px 0px;gap: 0;}
+  .nav-logo{transform: scale(0.8);}
+  .nav-login-cart{transform: scale(0.8);}
+}
